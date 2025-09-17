@@ -85,13 +85,15 @@ h1 {
   font-size: 18px;
 }
 
-/* Ramo de girasoles (3D efecto giratorio) */
+/* Ramo de girasoles (3D giratorio) */
 .bouquet {
   perspective: 1000px;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
-  animation: spin 10s linear infinite;
+  position: relative;
+  animation: spin 15s linear infinite;
+  transform-style: preserve-3d;
 }
 
 .sunflower {
@@ -100,8 +102,7 @@ h1 {
   background: radial-gradient(circle, yellow 60%, brown 61%);
   border-radius: 50%;
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+  top: 100px; left: 100px;
 }
 
 .sunflower::before {
