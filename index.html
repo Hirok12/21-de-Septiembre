@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Sorpresa 🌻</title>
-  <!-- Enlace al CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,18 +15,13 @@
   <!-- Contenido sorpresa -->
   <div id="content">
     <h1>🌻 ¡Feliz 21 de Septiembre! 🌻</h1>
-    <div class="bouquet">
-      <div class="sunflower"></div>
-      <div class="sunflower" style="transform: rotateY(60deg) translateZ(150px);"></div>
-      <div class="sunflower" style="transform: rotateY(120deg) translateZ(150px);"></div>
-      <div class="sunflower" style="transform: rotateY(180deg) translateZ(150px);"></div>
-      <div class="sunflower" style="transform: rotateY(240deg) translateZ(150px);"></div>
-      <div class="sunflower" style="transform: rotateY(300deg) translateZ(150px);"></div>
-    </div>
+    <div id="scene-container"></div>
     <p class="message">Con mucho cariño para ti 💛</p>
   </div>
 
-  <!-- Enlace al JS -->
+  <!-- Three.js desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
